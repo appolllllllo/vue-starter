@@ -16,11 +16,12 @@
 
         <div class="hero-visual">
             <div class="hero-image">
-                <img src="images/hero-image.jpg" alt="Тата Апполонова" loading="eager">
+                <img src="../../../assets/images/hero-image.jpg" alt="Тата Апполонова" loading="eager">
             </div>
         </div>
     </section>
     </template>
 
 <script setup>
-import CtaButton from '../atoms/CtaButton.vue';</script>
+import CtaButton from '@/components/portfolio-page/atoms/CtaButton.vue';
+</script>
