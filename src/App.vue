@@ -31,6 +31,7 @@ import Button from './components/Button.vue';
 header {
   line-height: 1.5;
   max-height: 100vh;
+  width: 100%;
 }
 
 .logo {

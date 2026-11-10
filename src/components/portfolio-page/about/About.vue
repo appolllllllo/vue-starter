@@ -1,6 +1,6 @@
 <template>
     <section id="about" class="about">
-        <SectionHeader label="01 / Обо мне"/>
+        <SectionHeader label="Обо мне" order="01"/>
         <div class="about-grid">
             <div class="about-text">
                 <p>
@@ -20,14 +20,14 @@
                 </p>
             </div>
             <div class="about-image">
-                <img src="../../../assets/images/about-image.jpg" alt="Тата Апполонова — писатель и программист">
+                <img src="@/assets/images/about-image.jpg" alt="Тата Апполонова — писатель и программист">
             </div>
         </div>
     </section>
 </template>
 
 <script setup>
-import SectionHeader from '../molecules/SectionHeader.vue';
+import SectionHeader from '@/components/portfolio-page/molecules/SectionHeader.vue';
 </script>
 
 <style scoped>
