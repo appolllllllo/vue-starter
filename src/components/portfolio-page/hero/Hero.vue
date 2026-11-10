@@ -16,7 +16,7 @@
 
         <div class="hero-visual">
             <div class="hero-image">
-                <img src="../../../assets/images/hero-image.jpg" alt="Тата Апполонова" loading="eager">
+                <img src="@/assets/images/hero-image.jpg" alt="Тата Апполонова" loading="eager">
             </div>
         </div>
     </section>

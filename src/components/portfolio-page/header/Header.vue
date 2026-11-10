@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-import Nav from './Nav.vue'
+import Nav from '@/components/portfolio-page/header/Nav.vue'
 </script>

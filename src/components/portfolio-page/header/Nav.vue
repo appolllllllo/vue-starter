@@ -1,12 +1,34 @@
 <template>
     <ul class="nav-links">
-        <NavItem href="#about" label="Обо мне"/>
-        <NavItem href="#projects" label="IT-проекты"/>
-        <NavItem href="#literature" label="Книги"/>
-        <NavItem href="#chimera" label="ХИМЕРА"/>
+        <NavItem
+        v-for="(item, index) in navItems"
+        :key="index"
+        :href="item.href"
+        :label="item.label"
+        >
+        </NavItem>
     </ul>
 </template>
 
 <script setup>
-import NavItem from './NavItem.vue'
+import NavItem from '@/components/portfolio-page/header/NavItem.vue'
+
+let navItems = [
+    {
+        href: "#about",
+        label: "Обо мне"
+    },
+    {
+        href: "#projects",
+        label: "IT-проекты"
+    },
+    {
+        href: "#literature",
+        label: "Книги"
+    },
+    {
+        href: "#chimera",
+        label: "ХИМЕРА"
+    }
+];
 </script>
