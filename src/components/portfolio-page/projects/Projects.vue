@@ -1,6 +1,6 @@
 <template>
 <section id="projects">
-        <SectionHeader label="02 / IT-проекты"/>
+        <SectionHeader order="02" label="IT-проекты"/>
         <div class="projects-grid">
 
         <ProjectCard 
