@@ -1,6 +1,6 @@
 <template>
     <section id="about" class="about">
-        <SectionHeader label="Обо мне" order="01"/>
+        <SectionHeader order="01" label="Обо мне"/>
         <div class="about-grid">
             <div class="about-text">
                 <p>
