@@ -14,7 +14,7 @@
 import SectionHeader from '@/components/portfolio-page/molecules/SectionHeader.vue';
 import LiteratureList from '@/components/portfolio-page/literature/LiteratureList.vue';
 
-let books = [
+const books = [
     {
         title: "Повесть «Лишние»",
         href: "https://www.litres.ru/66860168/",
@@ -47,3 +47,37 @@ let books = [
     },
 ]
 </script>
+
+<style scoped>
+.literature {
+    background: #0a0a0a;
+    padding: 120px 60px;
+}
+
+.literature-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.literature-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    line-height: 1.4;
+    color: #fff;
+    border-left: 3px solid #c90000;
+    padding-left: 40px;
+}
+
+@media (max-width: 1024px) {
+    .literature {
+        padding: 80px 30px;
+    }
+
+    .literature-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+</style>

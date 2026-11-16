@@ -1,18 +1,16 @@
 <template>
-<section id="projects">
-        <SectionHeader order="02" label="IT-проекты"/>
+    <section id="projects" class="projects">
+        <SectionHeader order="02" label="IT-проекты" />
         <div class="projects-grid">
 
-        <ProjectCard 
-            v-for="(card, index) in projectCards"
-            :key="index"
-            :title="card.title"
-            :description="card.description"
-            :button="card.button"
-            :tags="card.tags"
-        >
-        </ProjectCard>
-
+            <ProjectCard
+                v-for="(card, index) in projectCards"
+                :key="index"
+                :title="card.title"
+                :description="card.description"
+                :button="card.button"
+                :tags="card.tags"
+            />
         </div>
     </section>
 </template>
@@ -21,7 +19,7 @@
 import SectionHeader from '@/components/portfolio-page/molecules/SectionHeader.vue';
 import ProjectCard from '@/components/portfolio-page/projects/ProjectCard.vue';
 
-let projectCards = [
+const projectCards = [
     {
         title: "Delphis Oracle Bot",
         description: "Цифровая Пифия из храма Аполлона. Задай ей любой вопрос, и она ответит тебе на языке древних пророчеств: с туманными намеками и легкой долей божественного сарказма…",
@@ -45,3 +43,26 @@ let projectCards = [
 ];
 </script>
 
+<style scoped>
+.projects {
+    padding: 120px 60px;
+    position: relative;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+@media (max-width: 1024px) {
+    .projects {
+        padding: 80px 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
