@@ -1,6 +1,8 @@
 <template>
     <div class="section-header">
-        <span class="section-label">{{order}} / {{ label }}</span>
+        <span class="section-label">
+            {{ order }} / {{ label }}
+        </span>
     </div>
 </template>
 
@@ -16,3 +18,19 @@ defineProps({
     }
 })
 </script>
+
+<style scoped>
+.section-header {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.section-label {
+    color: #c90000;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    display: block;
+}
+</style>

@@ -21,3 +21,9 @@ defineProps({
     }
 })
 </script>
+
+<style scoped>
+.literature-list {
+  list-style: none;
+}
+</style>

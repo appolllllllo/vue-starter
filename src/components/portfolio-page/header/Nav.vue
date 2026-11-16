@@ -13,7 +13,7 @@
 <script setup>
 import NavItem from '@/components/portfolio-page/header/NavItem.vue'
 
-let navItems = [
+const navItems = [
     {
         href: "#about",
         label: "Обо мне"
@@ -32,3 +32,19 @@ let navItems = [
     }
 ];
 </script>
+
+<style scoped>
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-right: 145px;
+}
+
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 20px;
+        margin-right: 0;
+    }
+}
+</style>
