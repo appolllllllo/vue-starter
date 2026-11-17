@@ -14,6 +14,10 @@
 
 <script setup>
 defineProps({
+    size: {
+        type: Number,
+        default: 28,
+    },
     href: {
         type: String,
         required: false,
@@ -26,6 +30,10 @@ defineProps({
         type: String,
         required: false,
         default: "_self",
+    },
+    color: {
+        type: String,
+        default: "#555555",
     }
 })
 </script>
@@ -36,9 +44,9 @@ defineProps({
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
-    color: #555555;
+    width: v-bind(size + "px");
+    height: v-bind(size + "px");
+    color: v-bind(color);
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s ease, transform 0.3s ease;
