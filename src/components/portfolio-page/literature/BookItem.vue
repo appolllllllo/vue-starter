@@ -37,7 +37,7 @@ defineProps({
 
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out, padding 0.3s, color 0.3s;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .literature-item.fade-in {
@@ -64,23 +64,10 @@ defineProps({
   font-size: 0.9rem;
 }
 
-.literature-item:nth-child(1) {
-  transition-delay: 0.1s;
-}
-
-.literature-item:nth-child(2) {
-  transition-delay: 0.2s;
-}
-
-.literature-item:nth-child(3) {
-  transition-delay: 0.3s;
-}
-
-.literature-item:nth-child(4) {
-  transition-delay: 0.4s;
-}
-
-.literature-item:nth-child(5) {
-  transition-delay: 0.5s;
-}
+.literature-item:nth-child(1) { transition-delay: 0.1s; }
+.literature-item:nth-child(2) { transition-delay: 0.2s; }
+.literature-item:nth-child(3) { transition-delay: 0.3s; }
+.literature-item:nth-child(4) { transition-delay: 0.4s; }
+.literature-item:nth-child(5) { transition-delay: 0.5s; }
+.literature-item:nth-child(6) { transition-delay: 0.6s; }
 </style>

@@ -25,7 +25,7 @@ import IconLitres from "@/components/icons/IconLitres.vue";
 import IconYouTube from "@/components/icons/IconYouTube.vue";
 import IconVkontakte from "@/components/icons/IconVkontakte.vue";
 import IconGitHub from "@/components/icons/IconGitHub.vue";
-import IconPoems from "@/components/icons/IconPoems.vue";
+import IconStihi from "@/components/icons/IconStihi.vue";
 import UiIcon from "@/components/portfolio-page/ui/UiIcon.vue";
 
 
@@ -51,7 +51,7 @@ const icons = [
         href: "https://stihi.ru/author/appolllllllo",
         target: "_blank",
         tooltip: "Стихи.ру",
-        component: IconPoems,
+        component: IconStihi,
     },
     {
         href: "https://vk.com/appolllllllo",
