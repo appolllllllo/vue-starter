@@ -8,7 +8,7 @@
         :aria-label="tooltip"
         class="contact-icon-link"
     >
-        <slot></slot>
+       <slot></slot> 
     </component>
 </template>
 
